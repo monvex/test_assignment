@@ -11,6 +11,7 @@ external void exitFullscreen();
 external void requestFullscreen();
 
 /// Главная точка входа в приложение.
+///
 /// Запускает виджет [MyApp], который является корневым виджетом.
 void main() {
   runApp(const MyApp());
@@ -86,6 +87,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   /// Переключает полноэкранный режим для изображения.
+  ///
   /// Если текущее состояние полноэкранного режима активно, то оно будет отключено.
   /// Если нет, то будет запрашиваться переход в полноэкранный режим.
   void _toggleFullscreen() {
